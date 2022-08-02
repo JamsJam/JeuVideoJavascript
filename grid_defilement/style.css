@@ -81,7 +81,9 @@
 #tableau3{
     position:absolute
 }
+.tab2n3{
 
-.tableau-curent{
-    /* overflow: hidden; */
+}
+.game-area{
+    overflow: hidden;
 }
