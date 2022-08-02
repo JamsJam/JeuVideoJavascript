@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="gridmain">
+        <div class="hero"></div>
+        <div class="exit"></div>
+    </main>
+    <!-- <button>beggin</button> -->
+    <button>haut</button>
+    <button>bas</button>
+    <button>gauche</button>
+    <button>droit</button>
+    <script>
+        window.onload = () => {
+            let h = 1,
+                g = 1,
+                b = 1,
+                d = 1;
+                
+            let hero = document.querySelector('.hero');
+            
+            
+            let btn = document.querySelectorAll('button');
+            console.log(btn)
+
+
+            
+            btn[0].addEventListener('click',()=>{
+                console.log(hero);
+                if ( h > 1) {
+                    hero.style.transform = 'translateY(-40px)'
+                    hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
+                    b--;
+                    h--;
+                    
+                }
+                hero.style.backgroundColor = "brown" ;
+            })
+            
+            
+            
+            btn[1].addEventListener('click',()=>{
+                console.log(hero);
+                if (b<20) {
+                    hero.style.transform = 'translateY(40px)'
+                    hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
+                    
+                    b++;
+                    h++;
+                }
+                hero.style.backgroundColor = "green" ;
+                
+            })
+            
+
+
+            btn[2].addEventListener('click',()=>{
+                console.log(hero);
+                if(g>1){
+                    hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
+                    hero.style.transform = 'translateX(-40px)'
+                    g--;
+                    d--;
+                }
+                hero.style.backgroundColor = "navy" ;
+            })
+            
+
+
+            btn[3].addEventListener('click',()=>{
+                console.log(hero);
+                if (d<20) {
+                    
+                    hero.style.transform = 'translateX(40px)'
+                    
+                    hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
+                    d++;
+                    g++;
+                    
+                }
+                hero.style.backgroundColor = "tan" ;
+                
+            })
+        };
+
+    </script>
+</body>
+</html>
