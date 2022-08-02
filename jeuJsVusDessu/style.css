@@ -1,0 +1,24 @@
+.gridmain{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,1fr);
+    border: 3px solid black;
+    height: 800px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+.hero{
+    background-color: aqua;
+    
+    
+}
+
+.exit
+{
+    background-color: black;
+    grid-column: -1/-2;
+    grid-row: -3/-5 ;
+    
+}

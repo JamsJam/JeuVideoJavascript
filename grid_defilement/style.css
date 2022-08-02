@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game-area{
+    border: 3px solid black;
+    height: 710px;
+    width: 710px;
+    margin: 0 auto;
+}
+
+.ecran{
+    height: 700px;
+    width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 50px repeat(4,1fr) 50px;
+}
+
+.trigger{
+    background-color: rgba(165, 42, 42, 0.363);
+}
+
+
+#t3-1,
+#t2-1,
+#t1-1{
+    grid-area: 2/1/-2/2;
+}
+
+#t3-2,
+#t2-2,
+#t1-2{
+    grid-area: 1/2/2/-2;
+}
+
+#t3-3,
+#t2-3,
+#t1-3{
+    grid-area: -2/-1/2/-2;
+}
+
+#t3-4,
+#t2-4,
+#t1-4{
+    grid-area: -1/-2/-2/2
+}
+
+
+#t3-1:hover,
+#t2-1:hover,
+#t1-1:hover{
+    background-color: brown;
+}
+
+#t3-2:hover,
+#t2-2:hover,
+#t1-2:hover{
+    background-color: brown;
+}
+
+#t3-3:hover,
+#t2-3:hover,
+#t1-3:hover{
+    background-color: brown;
+}
+
+#t3-4:hover,
+#t2-4:hover,
+#t1-4:hover{
+    background-color: brown;
+}
+
+#tableau2{
+    position: relative
+}
+
+#tableau3{
+    position:absolute
+}
+.tab2n3{
+
+}
+.game-area{
+    overflow: hidden;
+}
