@@ -11,6 +11,7 @@
     <main class="gridmain">
         <div class="hero"></div>
         <div class="exit"></div>
+        <div class="obstacle"></div>
     </main>
     <!-- <button>beggin</button> -->
     <button>haut</button>
@@ -30,11 +31,20 @@
             let btn = document.querySelectorAll('button');
             console.log(btn)
 
+            // let obj = document.querySelector('.obstacle');
+            // let objLeft = parseInt(window.getComputedStyle(obj).getPropertyValue("grid-column"));
+            // let objRight = parseInt(window.getComputedStyle(obj).getPropertyValue("grid-column"));
+            var rect2 = {x:20,y:10, width : 50, height : 50};
+
 
             
             btn[0].addEventListener('click',()=>{
                 console.log(hero);
                 if ( h > 1) {
+                //     if(objLeft<20 && objLeft >0 && objRight >20 && objRight <0){
+                // obj.style.animation = "none";
+                if(objLeft<20 && objLeft >0 && objRight >20 && objRight <0){
+                obj.style.animation = "none";
                     hero.style.transform = 'translateY(-40px)'
                     hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
                     b--;
@@ -49,12 +59,15 @@
             btn[1].addEventListener('click',()=>{
                 console.log(hero);
                 if (b<20) {
+                    if(objLeft<20 && objLeft >0 && objRight >20 && objLeft <0){
+                obj.style.animation = "none";
+            
                     hero.style.transform = 'translateY(40px)'
                     hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
                     
                     b++;
                     h++;
-                }
+                }}
                 hero.style.backgroundColor = "green" ;
                 
             })
@@ -64,11 +77,14 @@
             btn[2].addEventListener('click',()=>{
                 console.log(hero);
                 if(g>1){
+                    if(objLeft<20 && objLeft >0 && objRight >-20 && objLeft <0){
+                obj.style.animation = "none";
+            
                     hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
                     hero.style.transform = 'translateX(-40px)'
                     g--;
                     d--;
-                }
+                }}
                 hero.style.backgroundColor = "navy" ;
             })
             
@@ -77,17 +93,19 @@
             btn[3].addEventListener('click',()=>{
                 console.log(hero);
                 if (d<20) {
-                    
+                    if(objLeft<20 && objLeft >0 && objRight >-20 && objLeft <0){
+                obj.style.animation = "none";
+            
                     hero.style.transform = 'translateX(40px)'
                     
                     hero.style.gridArea = h+"/"+g+"/"+b+"/"+d;
                     d++;
                     g++;
                     
-                }
+                }}
                 hero.style.backgroundColor = "tan" ;
                 
-            })
+            })            
         };
 
     </script>
