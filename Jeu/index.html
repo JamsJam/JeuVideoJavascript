@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #cadre{
+            position:absolute;
+            width: 150px;
+            height: 150px;
+            background-image: url(kid_run3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            
+        }
+        </style>
+        <div id="cadre"></div>
+        <script type="text/javascript">
+        var cadre = document.getElementById('cadre'),
+            s = cadre.style, 
+            i = cadre.offsetLeft, 
+            j = cadre.offsetTop;
+        document.onkeydown = function(event){
+            var event = event || window.event,
+                keyCode = event.keyCode;
+             
+            switch(keyCode){
+            case 38:
+                j-=20;
+                break;
+            case 40:
+                j+=20;
+                break;
+            case 37:
+                i-=20;
+                break;
+            case 39:
+                i+=20;
+                break;
+            }
+
+            s.left = String(i)+'px';
+            s.top = String(j)+'px';
+        }
+        </script>
+
+</body>
+</html>
