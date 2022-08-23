@@ -6,7 +6,7 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 
 ## Authors
 
--  Antoine Jeremy : Developeur Web
+-  ANTOINE Jeremy : Developeur Web
 
     *   GitHub : [@JamsJam](https://github.com/JamsJam)
     *   [Portfolio & CV](https://jamdev.fr)
@@ -19,7 +19,7 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 
     -[Libellé](Lien)
 
-- Daryl : Developeur Web
+- HIRA Daryl : Developeur Web
 
     -[Libellé](Lien)
 
@@ -27,7 +27,7 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 
     -[Libellé](Lien)
 
-- Ronel :
+- OUANNA Ronel : Designer
 
     -[Libellé](Lien)
 ## Related
@@ -35,6 +35,10 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 - SuperMeatBoy
 - Mario
 - The Crypte of the Necrodancing
+-[](https://www.youtube.com/watch?v=vyqbNFMDRGQ&)
+
+
+
 ## Tech Stack
 
 **Client:** 
@@ -56,6 +60,7 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 -   bas
 -   saut
 -   tire
+
 **Screen :**
 -   Defilement tableau
 -   Size 700 x 700px
@@ -132,7 +137,7 @@ ___
 
 
 
-### --------->MAJ du :   
+### ---------> MAJ du :  22/08/2022
 
 
 
@@ -204,7 +209,8 @@ ___
 
 
 
-### ---------> MAJ du :  22/08/2022
+
+### --------->MAJ du :   
 
 
 
