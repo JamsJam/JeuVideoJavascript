@@ -4,86 +4,80 @@
     box-sizing: border-box;
 }
 
-.game-area{
-    border: 3px solid black;
-    height: 710px;
-    width: 710px;
-    margin: 0 auto;
+#gameArea{
+    border :5px solid navy;
+    height: 605px;
+    width:  605px;
+    margin : auto;
 }
 
-.ecran{
-    height: 700px;
-    width: 700px;
-    margin: auto;
+
+.gameGrid{
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: 50px repeat(4,1fr) 50px;
+    grid-template-columns: 50px repeat(3, calc(500px/3)) 50px;
+    grid-template-rows: 50px repeat(3, calc(500px/3)) 50px;
+    transition: transform 0.5s ease;
+    
 }
+
+.canvasContainer{
+    border: 2px solid red;
+    grid-area: 2/2/5/5;
+
+}
+
 
 .trigger{
-    background-color: rgba(165, 42, 42, 0.363);
+    background-color: rgba(0, 0, 0, 0.387);
+}
+.trigger:hover{
+    background-color: rgba(0, 0, 0, 1);
 }
 
-
-#t3-1,
-#t2-1,
-#t1-1{
-    grid-area: 2/1/-2/2;
+#trigger1{
+    grid-area: 2/1/3/2 ;
 }
 
-#t3-2,
-#t2-2,
-#t1-2{
-    grid-area: 1/2/2/-2;
+#trigger2{
+    grid-area: 3/1/4/2;
 }
 
-#t3-3,
-#t2-3,
-#t1-3{
-    grid-area: -2/-1/2/-2;
+#trigger3{
+    grid-area: 4/1/5/2 ;
 }
 
-#t3-4,
-#t2-4,
-#t1-4{
-    grid-area: -1/-2/-2/2
+#trigger4{
+    grid-area: 5/2/6/3;
 }
 
-
-#t3-1:hover,
-#t2-1:hover,
-#t1-1:hover{
-    background-color: brown;
+#trigger5{
+    grid-area: 5/3/6/4;
 }
 
-#t3-2:hover,
-#t2-2:hover,
-#t1-2:hover{
-    background-color: brown;
+#trigger6{
+    grid-area: 5/4/6/5;
 }
 
-#t3-3:hover,
-#t2-3:hover,
-#t1-3:hover{
-    background-color: brown;
+#trigger7{
+    grid-area: 2/5/3/6 ;
 }
 
-#t3-4:hover,
-#t2-4:hover,
-#t1-4:hover{
-    background-color: brown;
+#trigger8{
+    grid-area: 3/5/4/6;
 }
 
-#tableau2{
-    position: relative
+#trigger9{
+    grid-area: 4/5/5/6 ;
 }
 
-#tableau3{
-    position:absolute
+#trigger10{
+    grid-area: 1/2/2/3;
 }
-.tab2n3{
 
+#trigger11{
+    grid-area: 1/3/2/4;
 }
-.game-area{
-    overflow: hidden;
+
+#trigger12{
+    grid-area: 1/4/2/5;
 }

@@ -6,30 +6,32 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 
 ## Authors
 
--  ANTOINE Jeremy : Developeur Web
+-  **ANTOINE Jeremy** : *Developeur Web*
 
     *   GitHub : [@JamsJam](https://github.com/JamsJam)
     *   [Portfolio & CV](https://jamdev.fr)
 
-- Jessy : Developeur Web
+- **CHANDLER Jessy** : *Developeur Web*
+
+    -   GitHub : [@Jess Jams](Lien)
+
+- **BONNY Geoffrey** : *Developeur Web*
 
     -[Libellé](Lien)
 
-- Geoffrey : Developeur Web
+- **HIRA Daryl** : *Developeur Web*
 
     -[Libellé](Lien)
 
-- HIRA Daryl : Developeur Web
+- **Theo** : *Developeur Web*
 
     -[Libellé](Lien)
 
-- Theo : Developeur Web
+- **OUANNA Ronel** : *Designer*
 
     -[Libellé](Lien)
 
-- OUANNA Ronel : Designer
 
-    -[Libellé](Lien)
 ## Related
 
 - SuperMeatBoy
@@ -131,19 +133,21 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
     -   nc
 
 ---
-**Prochaine reunion : 22/08/2022 20h30**
+**Prochaine reunion : 27/08/2022 20h30**
 ___
 ---
 
 
 
-### ---------> MAJ du :  22/08/2022
+### ---------> MAJ du :  27/08/2022
 
 
 
 **Fait :**
-- nc 
-  
+-    **Jessy**      : Canvas base projetctil
+-    **Jeremy**     : Canvas et base de definition des trigger
+-    **Daryl**      :
+-    **Geoffrey**   :
   
 
 -----
@@ -178,15 +182,18 @@ ___
 
 
 -   Jeremy : 
-    -  nc  
+    -  Gerer systeme de deplacement dans le canvas
+    - temps ? zone->trigger  
 
 
 -   Jessy : 
-    -   nc   
+    -   Integration du canva au systeme de slide   
 
 
 -   Daryl :
-    -   nc
+    -   Approfondissement de la vu du dessus
+        -   comprehension du code 
+        -   generation de tableau personalisé
 
 
 -   Theo : 
@@ -200,9 +207,13 @@ ___
 -   Ronel :
     -   nc
 
+-   **All** : Definir l'univers du jeu 
+    -   charte grafique
+    -   ton
+    -   Style
 
 -----
-**Prochaine reunion :**
+**Prochaine reunion : Samedi 03 Septembre 2022**
 
 ___
 ---
@@ -210,7 +221,7 @@ ___
 
 
 
-### --------->MAJ du :   
+### --------->MAJ du : Samedi 03 Septembre 2022  
 
 
 
@@ -222,16 +233,20 @@ ___
 -----
 **Role :**
 
+
 -   Jeremy : 
-    -  nc  
+    -  Gerer systeme de deplacement dans le canvas
+    - temps ? zone->trigger  
 
 
 -   Jessy : 
-    -   nc   
+    -   Integration du canva au systeme de slide   
 
 
 -   Daryl :
-    -   nc
+    -   Approfondissement de la vu du dessus
+        -   comprehension du code 
+        -   generation de tableau personalisé
 
 
 -   Theo : 
@@ -245,6 +260,12 @@ ___
 -   Ronel :
     -   nc
 
+-   **All** : Definir l'univers du jeu 
+    -   charte grafique
+    -   ton
+    -   Style
+
+    
 
 -----
 **A faire :**

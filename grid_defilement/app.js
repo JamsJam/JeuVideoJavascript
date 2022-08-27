@@ -1,6 +1,21 @@
-let trig = document.querySelectorAll(".trigger")
-console.log(trig)
-trig[1].addEventListener('click',() => {
-    document.querySelector('#tableau-curent').style.transform = "translateY(-700px)"
-    document.querySelector('#tableau-curent').style.transition = "1s"
+let gridArea = document.querySelector('.gameGrid')
+function slideGauche() {
+
+    gridArea.style.transform = "translatex(-600)";
+}
+
+
+
+document.querySelector('#trigger1').addEventListener('click',() => {
+    slideGauche()
+})
+
+
+document.querySelector('#trigger2').addEventListener('click',() => {
+    slideGauche()
+})
+
+
+document.querySelector('#trigger3').addEventListener('click',() => {
+    slideGauche()
 })

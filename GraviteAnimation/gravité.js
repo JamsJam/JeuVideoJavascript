@@ -12,6 +12,7 @@ c.fillRect(0, 0, canvas.width, canvas.height)
 
 //Creation du personnage
 
+
 class Sprite {
     constructor(position) {
         this.position = position
