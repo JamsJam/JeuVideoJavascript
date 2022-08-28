@@ -44,9 +44,9 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
 ## Tech Stack
 
 **Client:** 
--   HTML
--   CSS
-    -   CSS Grid
+-   HTML5
+    -   Canvas
+-   CSS3
 -   Javascript
 
 **Server:** 
@@ -300,3 +300,8 @@ ___
 
 ___
 ---
+
+
+
+
+
