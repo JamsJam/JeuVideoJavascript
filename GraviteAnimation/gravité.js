@@ -4,7 +4,7 @@ const canvas = document.querySelector('canvas');
 let div = document.querySelector('div');
 const c = canvas.getContext('2d');
 canvas.width = 900
-canvas.height = 800
+canvas.height = 700
 
 // div.style.display = "flex"
 // div.style.justifyContent = "center"
@@ -111,10 +111,20 @@ class PlateForme{
 const etage1Pf1 = new PlateForme({
     position:{
         x: 0,
-        y: 300+(500*(2/3))
+        y: 200+(500*(2/3))
     },
-    height: 30,
+    height: 10,
     width: 300,
+    color: 'yellow'
+})
+
+const etage2Pf1 = new PlateForme({
+    position:{
+        x: 200,
+        y: 200+(500*(1/3))
+    },
+    height: 10,
+    width: 500,
     color: 'yellow'
 })
 
@@ -169,8 +179,9 @@ function animate() {
     c.fillRect(0,0,canvas.width,canvas.height)
     // reprise de la position du player a chaque frame
     player.update()
-    // reprise de la position de enemy a chaque frame
+    // Apparition des plateformes
     etage1Pf1.draw()
+    etage2Pf1.draw()
 
     // **************************************Le joueurs se dirigera vers la derniere touche appuyé
 
@@ -200,7 +211,18 @@ function animate() {
     // ********************************************************detecter les collision etre player et plateForme
     if(player.position.y + player.height >= etage1Pf1.position.y  &&
         player.position.y + player.height <= etage1Pf1.position.y + etage1Pf1.height &&
-        player.position.x <= etage1Pf1.position.x + etage1Pf1.width){
+        player.position.x <= etage1Pf1.position.x + etage1Pf1.width&&
+        player.position.x >= etage1Pf1.position.x 
+        ){
+            
+        player.velocity.y = 0
+    }
+    
+    if(player.position.y + player.height >= etage2Pf1.position.y  &&
+        player.position.y + player.height <= etage2Pf1.position.y + etage2Pf1.height &&
+        player.position.x <= etage2Pf1.position.x + etage2Pf1.width&&
+        player.position.x >= etage2Pf1.position.x
+        ){
             
         player.velocity.y = 0
     }
