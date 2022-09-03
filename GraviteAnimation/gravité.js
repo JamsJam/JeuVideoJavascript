@@ -28,7 +28,7 @@ class Sprite {
 
         this.width = 25
         //la taille du resctangle player( accessorement , le bas du recctangle)
-        this.height= 50 
+        this.height= 35 
 
         this.lastKey = ""
 
@@ -56,7 +56,7 @@ class Sprite {
         //AttackBox
         if (this.isAttacking) {
             
-            c.fillStyle = 'tan'
+            c.fillStyle = 'green'
             c.fillRect( this.attackBox.position.x, 
                 this.attackBox.position.y, 
                 this.attackBox.width, 
@@ -93,6 +93,35 @@ class Sprite {
     }
 }
 
+
+
+const player = new Sprite({
+    position:{
+    x:0, //x et y font reference a l'argument position qui est un objet {x,y}
+    y:0
+    },
+    velocity:{
+        x:0,
+        y:10
+    },
+    color : 'white'
+
+})
+
+
+
+const enemy = new Sprite({
+    position:{
+    x:200, //x et y font reference a l'argument position qui est un objet {x,y}
+    y:50
+    },
+    velocity:{
+        x:0,
+        y:10
+    },
+    color: 'crimson'
+})
+
 // ****************************************** Creation des plateForme
 
 class PlateForme{
@@ -118,6 +147,16 @@ const etage1Pf1 = new PlateForme({
     color: 'yellow'
 })
 
+const etage1Pf2 = new PlateForme({
+    position:{
+        x: 400,
+        y: 200+(500*(2/3))
+    },
+    height: 10,
+    width: 300,
+    color: 'yellow'
+})
+
 const etage2Pf1 = new PlateForme({
     position:{
         x: 200,
@@ -128,33 +167,16 @@ const etage2Pf1 = new PlateForme({
     color: 'yellow'
 })
 
-
-const player = new Sprite({
+const etage3Pf1 = new PlateForme({
     position:{
-    x:0, //x et y font reference a l'argument position qui est un objet {x,y}
-    y:0
+        x: 400,
+        y: 200
     },
-    velocity:{
-        x:0,
-        y:10
-    },
-    color : 'navy'
-
+    height: 10,
+    width: 500,
+    color: 'yellow'
 })
 
-
-
-// const enemy = new Sprite({
-//     position:{
-//     x:200, //x et y font reference a l'argument position qui est un objet {x,y}
-//     y:50
-//     },
-//     velocity:{
-//         x:0,
-//         y:10
-//     },
-//     color: 'crimson'
-// })
 
 const keys = {
     d:{
@@ -170,7 +192,18 @@ const keys = {
 
 let isJump = false;
 
-// Boucle infini permettant un animation frame par frame
+
+
+
+
+
+
+
+
+
+
+
+// *************************************************************Boucle infini permettant un animation frame par frame
 function animate() {
     window.requestAnimationFrame(animate)
     //ON definit que le canva sera noir
@@ -179,9 +212,12 @@ function animate() {
     c.fillRect(0,0,canvas.width,canvas.height)
     // reprise de la position du player a chaque frame
     player.update()
+    enemy.update()
     // Apparition des plateformes
     etage1Pf1.draw()
+    etage1Pf2.draw()
     etage2Pf1.draw()
+    etage3Pf1.draw()
 
     // **************************************Le joueurs se dirigera vers la derniere touche appuyé
 
@@ -198,15 +234,15 @@ function animate() {
 
     // ********************************************************detecter les collision etre player.attackbox et enemy.sprite
     
-    // if (player.attackBox.position.x + player.attackBox.width >= enemy.position.x &&
-    //     player.attackBox.position.x <= enemy.position.x  + enemy.width &&
-    //     player.attackBox.position.y + player.attackBox.height >= enemy.position.y &&
-    //     player.position.y <= enemy.position.y + enemy.height &&
-    //     player.isAttacking){
+    if (player.attackBox.position.x + player.attackBox.width >= enemy.position.x &&
+        player.attackBox.position.x <= enemy.position.x  + enemy.width &&
+        player.attackBox.position.y + player.attackBox.height >= enemy.position.y &&
+        player.position.y <= enemy.position.y + enemy.height &&
+        player.isAttacking){
             
-            
-    //         player.isAttacking = false
-    //     }
+            console.log( 'attack succed')
+            player.isAttacking = false
+        }
         
     // ********************************************************detecter les collision etre player et plateForme
     if(player.position.y + player.height >= etage1Pf1.position.y  &&
@@ -217,11 +253,28 @@ function animate() {
             
         player.velocity.y = 0
     }
+    if(player.position.y + player.height >= etage1Pf2.position.y  &&
+        player.position.y + player.height <= etage1Pf2.position.y + etage1Pf2.height &&
+        player.position.x <= etage1Pf2.position.x + etage1Pf2.width&&
+        player.position.x >= etage1Pf2.position.x 
+        ){
+            
+        player.velocity.y = 0
+    }
     
     if(player.position.y + player.height >= etage2Pf1.position.y  &&
         player.position.y + player.height <= etage2Pf1.position.y + etage2Pf1.height &&
         player.position.x <= etage2Pf1.position.x + etage2Pf1.width&&
         player.position.x >= etage2Pf1.position.x
+        ){
+            
+        player.velocity.y = 0
+    }
+    
+    if(player.position.y + player.height >= etage3Pf1.position.y  &&
+        player.position.y + player.height <= etage3Pf1.position.y + etage3Pf1.height &&
+        player.position.x <= etage3Pf1.position.x + etage3Pf1.width&&
+        player.position.x >= etage3Pf1.position.x
         ){
             
         player.velocity.y = 0
@@ -262,15 +315,31 @@ window.addEventListener('keydown',(event) => {
         case 'z':
             
             if (keys.z.pressed  === false) {
+
+
+                // // if (keys.z.pressed  === false) {
+                //     isJump = true
+                //     keys.z.pressed = true
+                //     player.velocity.y = -7
+                //     // if (keys.z.pressed  === true) {
+                //     //     keys.z.pressed = null
+                //     // }
+                // // }
+
+
+
+
+
                 console.log(isJump)
-                if(isJump === true){
+                
+                if(isJump === false){
                     
-                }else {
                     isJump = true
                     
                     console.log("jump")
                     keys.z.pressed = true
                     player.velocity.y = -7
+                
                 }
             }
 
