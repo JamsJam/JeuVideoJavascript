@@ -11,15 +11,15 @@ Le jeu est un plateformeur 2D a vue de coté et vu du dessus fait un HTML/CSS/JS
     *   GitHub : [@JamsJam](https://github.com/JamsJam)
     *   [Portfolio & CV](https://jamdev.fr)
 
+- **HIRA Daryl** : *Developeur Web*
+
+    -[Libellé](Lien)
+
 - **CHANDLER Jessy** : *Developeur Web*
 
     -   GitHub : [@Jess Jams](Lien)
 
 - **BONNY Geoffrey** : *Developeur Web*
-
-    -[Libellé](Lien)
-
-- **HIRA Daryl** : *Developeur Web*
 
     -[Libellé](Lien)
 
