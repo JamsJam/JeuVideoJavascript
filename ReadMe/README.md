@@ -226,7 +226,19 @@ ___
 
 
 **Fait :**
-- nc 
+
+- vue de coté 
+    -   Gestion du rafraichissement du canvas
+    -   Gestion des mouvement
+    -   Gestion des sauts
+    -   Gestion des attaques
+    -   Gestion des plates-formes
+    -   Gestion des colision
+    -   Affichage de la barre de vie
+
+
+-   Vue du dessus
+    -   Comprension du code(obstacle, dimension, mouvement, colision )
   
   
 
@@ -272,15 +284,17 @@ ___
 
 
 -   Jeremy : 
-    -  nc  
+    -  gere les evenement et trigger
+    -  methode barre de vie
+    - mettre de l'ordre ddans le fichier js ( spliting and commentary)
 
 
 -   Jessy : 
-    -   nc   
+    -   Integration du canva au systeme de slide      
 
 
 -   Daryl :
-    -   nc
+    -   generation de tableau personalisé
 
 
 -   Theo : 
@@ -296,7 +310,181 @@ ___
 
 
 -----
-**Prochaine reunion :**
+
+**Prochaine reunion : 10/08/2022**
+
+___
+---
+
+
+
+
+### --------->MAJ du : 
+
+
+
+**Fait :**
+
+
+  
+  
+
+-----
+**Role :**
+
+
+-   Jeremy : 
+ 
+
+
+-   Jessy : 
+
+
+
+-   Daryl :
+
+
+-   Theo : 
+
+
+
+-   Geoffrey :
+
+
+
+-   Ronel :
+
+
+
+    
+
+-----
+**A faire :**
+
+
+-   Jeremy : 
+
+
+
+-   Jessy : 
+     
+
+
+-   Daryl :
+
+
+
+-   Theo : 
+    
+
+
+-   Geoffrey :
+    
+
+
+-   Ronel :
+    
+
+
+-----
+**Prochaine reunion : **
+
+___
+---
+
+
+
+
+### --------->MAJ du : Samedi 03 Septembre 2022  
+
+
+
+**Fait :**
+
+- vue de coté 
+    -   Gestion du rafraichissement du canvas
+    -   Gestion des mouvement
+    -   Gestion des sauts
+    -   Gestion des attaques
+    -   Gestion des plates-formes
+    -   Gestion des colision
+    -   Affichage de la barre de vie
+
+
+-   Vue du dessus
+    -   Comprension du code(obstacle, dimension, mouvement, colision )
+  
+  
+
+-----
+**Role :**
+
+
+-   Jeremy : 
+    -  Gerer systeme de deplacement dans le canvas
+    - temps ? zone->trigger  
+
+
+-   Jessy : 
+    -   Integration du canva au systeme de slide   
+
+
+-   Daryl :
+    -   Approfondissement de la vu du dessus
+        -   comprehension du code 
+        -   generation de tableau personalisé
+
+
+-   Theo : 
+    -   nc
+
+
+-   Geoffrey :
+    -   nc
+
+
+-   Ronel :
+    -   nc
+
+-   **All** : Definir l'univers du jeu 
+    -   charte grafique
+    -   ton
+    -   Style
+
+    
+
+-----
+**A faire :**
+
+
+-   Jeremy : 
+    -  gere les evenement et trigger
+    -  methode barre de vie
+    - mettre de l'ordre ddans le fichier js ( spliting and commentary)
+
+
+-   Jessy : 
+    -   Integration du canva au systeme de slide      
+
+
+-   Daryl :
+    -   generation de tableau personalisé
+
+
+-   Theo : 
+    -   nc
+
+
+-   Geoffrey :
+    -   nc
+
+
+-   Ronel :
+    -   nc
+
+
+-----
+**Prochaine reunion : 10/08/2022**
 
 ___
 ---
